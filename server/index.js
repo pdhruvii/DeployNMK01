@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 // mongoose.connect('mongodb+srv://dhruvi:biasaware@biasaware.ipjjs0e.mongodb.net/')
-mongoose.connect('mongodb://localhost:27017/full-mern-stack')
+mongoose.connect('mongodb+srv://dhruvi24patell:dhruvi24patell@full-mern-stack.myi3k2o.mongodb.net/')
 
 app.post('/api/register', async (req, res) => {
     console.log(req.body)
