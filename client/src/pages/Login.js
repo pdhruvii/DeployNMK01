@@ -17,6 +17,15 @@ function Login() {
       }),
     });
     const data = await response.json();
+
+    //For the quote, did not do this part
+    // if (data.user) {
+    //   alert('Login Successful')
+    //   window.location.href = '/quote'
+    // } else {
+    //   alert('Please check your username and password.')
+    // }
+
     console.log(data);
   }
   
