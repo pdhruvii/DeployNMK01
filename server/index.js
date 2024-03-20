@@ -15,6 +15,10 @@ app.use(express.json())
 // mongoose.connect('mongodb+srv://dhruvi:biasaware@biasaware.ipjjs0e.mongodb.net/')
 mongoose.connect('mongodb+srv://dhruvi24patell:dhruvi24patell@full-mern-stack.myi3k2o.mongodb.net/')
 
+app.get('/', async (req, res) => {
+    res.json('Hello')
+})
+
 app.post('/api/register', async (req, res) => {
     console.log(req.body)
     try {
